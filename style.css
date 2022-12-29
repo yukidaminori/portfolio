@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+ }
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: "Courgette";
+    background-color: #fafafa;
+ }
+ header {
+    padding: 14px 1% 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    border-bottom: 0.4px solid #e0e0e0;
+    box-shadow: -5px -7px 20px 0px rgb(0 0 0 / 50%);
+    z-index: 1;
+ }
+
+
+ h1 {
+    margin: 0; padding: 0;
+    font-size: 20px;
+ }
+ a {	
+    text-decoration: none;
+    color: #5A4C57;
+ }
+ nav {
+    margin: 0 0 0 auto;
+    display: flex;
+ }
+ ul {
+    list-style: none;
+    margin: 0;
+ }
+ li {
+    margin: 0 0 0 15px;
+    font-size: 14px;
+ }
+ section {
+    padding: 5% 10%;
+ }
+
+.nav-menu {
+    margin-left: 40px;
+    font-weight: 600;
+}
+/* ハンバーガーメニュー */
+.hamburger {
+    position: absolute;
+    right: 20px;
+    top: 19px;
+    width: 50px;
+    height: 32px;
+    cursor: pointer;
+    z-index: 300;
+  }
+  
+  .hamburger__line {
+    position: absolute;
+    width: 36px;
+    height: 2px;
+    right: 0;
+    background-color: #5A4C57;
+    transition: all 0.5s;
+  }
+  
+  .hamburger__line--1 {
+    top: 1px;
+  }
+  
+  .hamburger__line--2 {
+    top: 10px;
+  }
+  
+  .hamburger__line--3 {
+    top: 20px;
+  }
+  
+  .open .hamburger__line--1 {
+    transform: rotate(-45deg);
+    top: 11px;
+  }
+  
+  .open .hamburger__line--2 {
+    opacity: 0;
+  }
+  
+  .open .hamburger__line--3 {
+    transform: rotate(45deg);
+    top: 11px;
+  }
+  
+  .sp-nav {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 16%;
+    height: 100vh;
+    background-color: #fff;
+    transition: all 0.5s;
+    z-index: 200;
+    overflow-y: auto;
+  }
+  
+  .open .sp-nav {
+    right: 0;
+  }
+  
+  .sp-nav > ul {
+    margin: 120px 0;
+  }
+  
+  .nav-li > li {
+    font-size: 16px;
+    line-height: 4.8rem;
+    font-weight: 600;
+  }
+  
+  .black-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    background-color: #00273f;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  .open .black-bg {
+    opacity: 0.3;
+    visibility: visible;
+  }
+
+/* ファーストビュー */
+#topview {
+    background-image: url("img/topview.png");
+    background-size: cover;
+    content: unset;
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+}
+
+.top-title {
+    position: relative;
+    left: 12vw;
+    bottom: 2.5999999999999996vw;
+    width: 70%;
+}
+
+/* プロフィール */
+/* 実績 */
+/* スキル */
+/* コンタクト */
