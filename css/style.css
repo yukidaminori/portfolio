@@ -170,7 +170,7 @@
 
 /* ファーストビュー */
 #topview {
-    background-image: url("/img/topview.png");
+    background-image: url("img/topview.png");
     background-size: cover;
     content: unset;
     display: inline-block;
