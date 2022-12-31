@@ -225,18 +225,16 @@
       width: 25px;
   }
   
-  .slick-prev {/*戻る矢印の位置と形状*/
+  .slick-prev {
       left:2.5%;
       transform: rotate(-135deg);
   }
   
-  .slick-next {/*次へ矢印の位置と形状*/
+  .slick-next {
       right:2.5%;
       transform: rotate(45deg);
   }
-  
-  /*ドットナビゲーションの設定*/
-  
+    
   .slick-dots {
       position: relative;
       z-index: 3;
