@@ -63,6 +63,15 @@
  li {
     font-size: 14px;
  }
+
+ button {
+  background: none;
+	border: none;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+ }
  section {
     padding: 5% 10%;
     position: relative;
@@ -408,3 +417,116 @@ transform: rotate(-45deg);
   padding: 3%;
 }
 /* コンタクト */
+#contact > .section-content {
+  text-align: center;
+}
+#wrapper{
+  cursor: pointer;
+  width: 70px;
+  height: 80px;
+  margin: 62px auto;
+  padding: 0;
+  -webkit-perspective: 200;
+  -webkit-perspective-origin: 50% 0;
+  -moz-perspective: 200;
+  -moz-perspective-origin: 50% 0;
+}
+.anvelopebg{
+  width: 70px;
+  height: 40px;
+  background-color: #f5aaeb;
+  position: absolute;
+  margin-bottom: 0;
+  z-index: 3;
+}
+.anvelope{
+  width: 0px;
+  height: 0px;
+  position: relative;
+
+  margin-bottom: 0;
+  border-left: 35px #f3b5eb solid;
+  border-bottom: 20px #f7c6f0 solid;
+  border-right: 35px #f7c6f0 solid;
+  border-top: 20px rgba(0,0,0,0) solid;
+
+  box-shadow: 0px 4px 0px 0px rgba(24,116,86,1);
+  -webkit-box-shadow: 0px 4px 0px 0px rgba(24,116,86,1);
+  z-index: 4;
+   
+}
+.letter{
+  width: 54px;
+  height: 44px;
+  background-color: rgb(233, 227, 227);
+  position: relative;
+  top:-95px;
+  left: 8px;
+  z-index: 3;
+
+}
+.letter:after{
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 6px;
+  background-color: #9bbeb2;
+  top:6px;
+  left: 6px;
+}
+.letter:before{
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 6px;
+  background-color: #9bbeb2;
+  top:15px;
+  left: 6px;
+}
+.opener{
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 35px rgba(0,0,0,0) solid;
+  border-bottom: 31px #f5aaeb solid;
+  border-right: 35px rgba(0,0,0,0) solid;
+  top: -71px;
+  z-index: 2;
+  transform-origin:0 100%;
+  -ms-transform-origin:0 100%; /* IE 9 */
+  -webkit-transform-origin:0 100%; /* Safari and Chrome */
+}
+
+@keyframes letteranim
+{
+  0%{top:-95px;}
+  50%{top:-71px;}
+  100%{top:-71px;}
+}
+@-webkit-keyframes letteranim
+{
+  0%{top:-95px;}
+  50%{top:-71px;}
+  100%{top:-71px;}
+}
+
+@keyframes openanim
+{
+  0%{-webkit-transform: rotateX(0deg);}
+  50%{-webkit-transform: rotateX(0deg);z-index :2;}
+  100%{-webkit-transform: rotateX(180deg);z-index :5;}
+}
+@-webkit-keyframes openanim
+{
+  0%{-webkit-transform: rotateX(0deg);}
+  50%{-webkit-transform: rotateX(0deg);z-index :2;}
+  100%{-webkit-transform: rotateX(180deg);z-index :5;}
+}
+#wrapper:hover .letter{
+  animation: letteranim 1s ease-out 0s 2 alternate;
+  -webkit-animation: letteranim 1s ease-out 0s 2 alternate; /* Safari and Chrome */
+}
+#wrapper:hover .opener{
+  animation: openanim 1s ease-out 0s 2 alternate;
+  -webkit-animation: openanim 1s ease-out 0s 2 alternate; /* Safari and Chrome */
+}
