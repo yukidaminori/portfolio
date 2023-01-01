@@ -345,5 +345,66 @@ a.btn-flat:hover:before {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
 }
+
 /* スキル */
+.accordion-area{
+  list-style: none;
+  width: 96%;
+  max-width: 900px;
+  margin:0 auto;
+}
+
+.accordion-area li{
+  margin: 10px 0;
+}
+
+.accordion-area section {
+border: 1px solid #ccc;
+}
+
+.skill-title {
+  position: relative;
+  cursor: pointer;
+  font-size:1rem;
+  font-weight: normal;
+  padding: 3% 3% 3% 50px;
+  transition: all .5s ease;
+  background-color: #5a4c5752;
+  margin-bottom: 0;
+}
+
+.skill-title::before,
+.skill-title::after{
+  position: absolute;
+  content:'';
+  width: 15px;
+  height: 2px;
+  background-color: #333;
+  
+}
+.skill-title::before{
+  top:48%;
+  left: 15px;
+  transform: rotate(0deg);
+  
+}
+.skill-title::after{    
+  top:48%;
+  left: 15px;
+  transform: rotate(90deg);
+
+}
+.skill-title.close::before{
+transform: rotate(45deg);
+}
+
+.skill-title.close::after{
+transform: rotate(-45deg);
+}
+
+.box {
+  display: none;
+  background: #f3f3f3;
+  padding: 3%;
+}
 /* コンタクト */
