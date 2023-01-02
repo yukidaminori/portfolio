@@ -78,6 +78,10 @@
     z-index: 0;
  }
 
+ p {
+  line-height: 200%;
+ }
+
  .section-title {
   display: flex;
   justify-content: center;
@@ -226,6 +230,7 @@
   
   .prof-content {
     width: 60%;
+    padding: 2%;
   }
   .slider-item {
       width: 100%;
