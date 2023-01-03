@@ -5,6 +5,7 @@
     <meta http-equiv="Cache-Control" content="no-cache">
     <meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
     <title>minorifolio:)｜幸田みのりのポートフォリオサイト</title>
+    <link rel="icon" href="img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -90,7 +91,7 @@
                                     大学時代に経験したマルシェイベントでのライター活動で、「つくり手の想いを届けるということは、受け取り手を含め人々の、社会の幸せにつながるのではないか」と考えました。<br>
                                     私はそのつくり手と受け取り手をつなぐ橋渡し役になりたいと考えています。<br><br>
                                     <span style="font-weight: bold;">＊万能調味料でありたい<br></span>
-                                    提案もデザインも実装も、広い守備範囲でお客様の課題やご要望に答えられる存在でありたいです。
+                                    企画からデザイン、実装まで、広い守備範囲でお客様の課題やご要望に答えられる存在でありたいです。
                                 </p>
                             </div>
                             <img src="img/me2.png" alt="">
@@ -108,21 +109,47 @@
             </div>
             <p class="description">残TODO：中身検討</p>
             <div class="section-content">
-                <a href="#web" class="btn btn-flat modal-open web"><span>Web制作</span></a>
-                <a href="#uiux" class="btn btn-flat modal-open uiux"><span>UIUX</span></a>
-                <a href="#other" class="btn btn-flat modal-open other"><span>その他</span></a>
-            </div>
-            <div id="web">
-                <h3>Web制作<h3>
-                <p>テキストテキストテキストテキストテキストテキスト</p>
-            </div>
-            <div id="uiux">
-                <h3>UIUX</h3>
-                <p>テキストテキストテキストテキストテキストテキスト</p>
-            </div>
-            <div id="other">
-                <h3>その他</h3>
-                <p>テキストテキストテキストテキストテキストテキスト</p>
+                <ul class="tab">
+                    <li>
+                        <a href="#web" class="tab-menu">
+                            <img src="img/web.svg" alt="web">
+                            <span>Web制作</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#uiux" class="tab-menu">
+                            <img src="img/uiux.svg" alt="web">
+                            UIUX
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#other" class="tab-menu">
+                            <img src="img/other.svg" alt="web">
+                            その他
+                        </a>
+                    </li>
+                </ul>
+                <div id="web" class="area">
+                    <ul>
+                        <li>ガパオライス</li>
+                        <li>ミートソーススパゲティ―</li>
+                        <li>ハンバーグ定食</li>
+                    </ul>
+                </div>
+                <div id="uiux" class="area">
+                    <ul>
+                        <li>ウーロン茶</li>
+                        <li>オレンジジュース</li>
+                        <li>ジンジャーエール</li>
+                    </ul>
+                </div>
+                <div id="other" class="area">
+                    <ul>
+                        <li>カレーライス</li>
+                        <li>ドリア</li>
+                        <li>グラタン</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -172,18 +199,21 @@
             <p class="description">
                 最後までご覧いただきありがとうございました。<br>
                 このサイトを通じて少しでも興味を持っていただけると幸いです。<br>
-                お問い合わせやご連絡はこちらからお願いいたします。<br><br>
+                お問い合わせやご連絡はこちらのお問い合わせフォームからお願いいたします。<br><br>
                 |<br>
                 |<br>
                 ↓
             </p>
             <div class="section-content">
-                <button id="wrapper" type=“button” onclick="location.href='mailto:rinngo903@outlook.jp'">
-                    <div class="anvelopebg"></div>
-                    <div class="anvelope"></div>    
-                    <div class="opener"></div>
-                    <div class="letter"></div>
-                </button>
+                <a id="wrapper" href="#contactform" class="btn btn-flat modal-open">
+                        <div class="anvelopebg"></div>
+                        <div class="anvelope"></div>    
+                        <div class="opener"></div>
+                        <div class="letter"></div>    
+                </a>
+            </div>
+            <div id="contactform">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdhbNAnWHvuWIWLpM9ssD4vI2U20TJMxkEOwzEZtqXhXBENaQ/viewform?embedded=true" width="640" height="1260" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
             </div>
         </section>
     </main>
