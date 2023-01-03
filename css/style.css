@@ -82,6 +82,10 @@
   line-height: 200%;
  }
 
+ #works,#contact {
+  background-color: #f3f3f3;
+ }
+
  .section-title {
   display: flex;
   justify-content: center;
@@ -99,7 +103,7 @@
 .nav-menu {
     margin-left: 40px;
     font-weight: 600;
-    color: #5A4C57;
+    color: #5a4c57;
 }
 .hamburger {
     position: absolute;
@@ -289,76 +293,51 @@
   }
 
 /* 実績 */
-#works > .section-content {
-  display: flex;
-  margin: 6% 0;
-  justify-content: space-between;
+.tab{
+	display: flex;
+	flex-wrap: wrap;
 }
-#other,#web,#uiux {
+.tab-menu{
+	display: block;
+	background:#ddd;
+	margin:0 2px;
+	padding:10px 20px;
+  color: #5A4C57;
+  font-weight: 600;
+}
+.tab li.active .tab-menu{
+	background:#fff;
+}
+
+.tab-menu >img {
+  width: 20px;
+  position: relative;
+  vertical-align: bottom;
+}
+
+.area {
 	display: none;
+	opacity: 0;
+	background: #fff;
+	padding:50px 20px;
 }
 
-.modaal-container{
-    max-width: 600px;
+.area.is-active {
+    display: block;
+    animation-name: displayAnime;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
-.modaal-close:after, 
-.modaal-close:before{
-	background:#ccc;	
+@keyframes displayAnime{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
-.modaal-close:focus:after,
-.modaal-close:focus:before,
-.modaal-close:hover:after,
-.modaal-close:hover:before{
-	background:#666;
-}
-
-.web {
-  background-image: url("../img/web.png");
-}
-
-.uiux {
-  background-image: url("../img/uiux.png");
-}
-
-.other {
-  background-image: url("../img/other.png");
-}
-
-a.btn-flat {
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  padding: 1.5rem 6rem;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 800;
-  border-radius: 0;
-}
-
-a.btn-flat span {
-  position: relative;
-}
-
-a.btn-flat:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: '';
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  -webkit-transform: translateX(-96%);
-  transform: translateX(-96%);
-  background: #eb6877;
-}
-
-a.btn-flat:hover:before {
-  -webkit-transform: translateX(0%);
-  transform: translateX(0%);
-}
 
 /* スキル */
 .accordion-area{
@@ -383,7 +362,7 @@ border: 1px solid #ccc;
   font-weight: normal;
   padding: 3% 3% 3% 50px;
   transition: all .5s ease;
-  background-color: #5a4c5752;
+  background-color: #c1c1c1;
   margin-bottom: 0;
 }
 
@@ -421,25 +400,49 @@ transform: rotate(-45deg);
   background: #f3f3f3;
   padding: 3%;
 }
+
+
 /* コンタクト */
 #contact > .section-content {
-  text-align: center;
+  display: flex;
 }
+#contactform {
+	display: none;
+}
+
+.modaal-container{
+  max-width: 640px;
+}
+
+.modaal-content-container {
+padding: 0;
+}
+
+.modaal-close:after, 
+.modaal-close:before{
+	background:#ccc;	
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+	background:#666;
+}
+
 #wrapper{
-  cursor: pointer;
   width: 70px;
   height: 80px;
-  margin: 62px auto;
-  padding: 0;
+  margin: 40px auto;
   -webkit-perspective: 200;
-  -webkit-perspective-origin: 50% 0;
+  -webkit-perspective-origin: 50% 0;   
   -moz-perspective: 200;
   -moz-perspective-origin: 50% 0;
 }
 .anvelopebg{
   width: 70px;
   height: 40px;
-  background-color: #f5aaeb;
+  background-color: #e9b004;
   position: absolute;
   margin-bottom: 0;
   z-index: 3;
@@ -450,9 +453,9 @@ transform: rotate(-45deg);
   position: relative;
 
   margin-bottom: 0;
-  border-left: 35px #f3b5eb solid;
-  border-bottom: 20px #f7c6f0 solid;
-  border-right: 35px #f7c6f0 solid;
+  border-left: 35px #ffc000 solid;
+  border-bottom: 20px #ffcc00 solid;
+  border-right: 35px #ffcc00 solid;
   border-top: 20px rgba(0,0,0,0) solid;
 
   box-shadow: 0px 4px 0px 0px rgba(24,116,86,1);
@@ -463,7 +466,7 @@ transform: rotate(-45deg);
 .letter{
   width: 54px;
   height: 44px;
-  background-color: rgb(233, 227, 227);
+  background-color: #e4e5d1;
   position: relative;
   top:-95px;
   left: 8px;
@@ -493,7 +496,7 @@ transform: rotate(-45deg);
   width: 0;
   height: 0;
   border-left: 35px rgba(0,0,0,0) solid;
-  border-bottom: 31px #f5aaeb solid;
+  border-bottom: 31px #e9b004 solid;
   border-right: 35px rgba(0,0,0,0) solid;
   top: -71px;
   z-index: 2;
