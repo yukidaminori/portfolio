@@ -83,7 +83,7 @@
   line-height: 200%;
  }
 
- #works,#contact {
+ #works,#skills,footer {
   background-color: #f3f3f3;
  }
 
@@ -225,6 +225,11 @@ color: #fff;
     opacity: 0.3;
     visibility: visible;
   }
+
+  /* フッター */
+footer {
+  height: 40px;
+}
 
 /* ファーストビュー */
 #topview {
