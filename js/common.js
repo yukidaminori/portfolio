@@ -41,16 +41,16 @@ if(!access){
 }
 
 //モーダル表示
-$(".modal-open").modaal({
-start_open:flag,
-overlay_close:true,
-before_open:function(){
-  $('html').css('overflow-y','hidden');
-},
-after_close:function(){
-  $('html').css('overflow-y','scroll');
-}
-});
+// $(".modal-open").modaal({
+// start_open:flag,
+// overlay_close:true,
+// before_open:function(){
+//   $('html').css('overflow-y','hidden');
+// },
+// after_close:function(){
+//   $('html').css('overflow-y','scroll');
+// }
+// });
 
 // アコーディオン
 $('.skill-title').on('click', function() {//タイトル要素をクリックしたら
