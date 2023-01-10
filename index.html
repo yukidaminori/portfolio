@@ -16,10 +16,10 @@
   </head>
   <body>
     <header>
-        <a href="#profile" class="nav-menu">Profile</a>
-        <!-- <a href="#works" class="nav-menu">Works</a> -->
-        <a href="#skills" class="nav-menu">Skills</a>
-        <a href="#contact" class="nav-menu">Contact</a>
+        <a href="#profile" class="nav-menu">Profile<span>プロフィール</span></a>
+        <!-- <a href="#works" class="nav-menu">Works<span>実績</span></a> -->
+        <a href="#skills" class="nav-menu">Skills<span>できること</span></a>
+        <a href="#contact" class="nav-menu">Contact<span>連絡先</span></a>
         <div id="nav-wrapper" class="nav-wrapper">
             <div class="hamburger" id="js-hamburger">
                 <span class="hamburger__line hamburger__line--1"></span>
@@ -28,10 +28,19 @@
             </div>
             <div class="sp-nav">
                 <ul class="nav-li">
-                    <li><a href="#profile">Profile</a></li>
-                    <!-- <li><a href="#works">Works</a></li> -->
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li class="nav-menu">
+                        <a href="#profile">Profile</a>
+                        <span>プロフィール</span>
+                    </li>
+                    <!-- <li><a href="#works" class="nav-menu">Works</a></li> -->
+                    <li class="nav-menu">
+                        <a href="#skills">Skills</a>
+                        <span>できること</span>
+                    </li>
+                    <li class="nav-menu">
+                        <a href="#contact">Contact</a>
+                        <span>連絡先</span>
+                    </li>
                 </ul>
             </div>
             <div class="black-bg" id="js-black-bg"></div>
@@ -44,7 +53,6 @@
         <section id="topview">
             <img src="img/top-title.png" alt="minorifolio" class="top-title">
         </section>
-
         <section id="profile">
             <div class="section-title">
                 <h2 class="en-title">Profile</h2>
@@ -102,7 +110,6 @@
                 </ul>   
             </div>
         </section>
-
         <!-- <section id="works">
             <div class="section-title">
                 <h2 class="en-title">Works</h2>
@@ -132,29 +139,33 @@
                 </ul>
                 <div id="web" class="area">
                     <ul>
-                        <li>ガパオライス</li>
-                        <li>ミートソーススパゲティ―</li>
-                        <li>ハンバーグ定食</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
                     </ul>
                 </div>
                 <div id="uiux" class="area">
                     <ul>
-                        <li>ウーロン茶</li>
-                        <li>オレンジジュース</li>
-                        <li>ジンジャーエール</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
                     </ul>
                 </div>
                 <div id="other" class="area">
                     <ul>
-                        <li>カレーライス</li>
-                        <li>ドリア</li>
-                        <li>グラタン</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
                     </ul>
                 </div>
             </div>
         </section> -->
-
         <section id="skills">
+            <div class="custom-shape-divider-bottom-1673275628">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
             <div class="section-title">
                 <h2 class="en-title">Skills</h2>
                 <span class="ja-title">ーできること</span>
@@ -170,7 +181,7 @@
                                     <tr>
                                       <th>HTML・css・JavaScript</th>
                                       <td>3年</td>
-                                      <td>自力でコーディングが可能　例）<a href="https://yukidaminori.github.io/virtual-image/" target="_blank" style="color: blue;">バーチャル背景作成ツール</a></td>
+                                      <td>自力でコーディングが可能　例）<a href="https://yukidaminori.github.io/virtual-image/" target="_blank" class="skill-example">バーチャル背景作成ツール</a></td>
                                     </tr>
                                     <tr>
                                       <th>PHP(Laravel)</th>
@@ -216,7 +227,12 @@
                                     <tr>
                                       <th>Illustrator</th>
                                       <td>4年</td>
-                                      <td>チラシやバナー作成等に必要なスキルは習得済み</td>
+                                      <td>
+                                        <a href="#thumbnail" class="skill-example modaal">サムネイル</a>
+                                        やチラシ、
+                                        <a href="#ovice" class="skill-example modaal">バーチャルイベントの背景</a>
+                                        作成等に必要なスキルは習得済み
+                                    </td>
                                     </tr>
                                     <tr>
                                       <th>AdobeXD・Figma</th>
@@ -258,9 +274,27 @@
                         </div>
                     </li>
                 </ul>
+                <div id="thumbnail">
+                    <img src="img/thumbnail.png" alt="" class="skill-image">
+                    <p class="skill-description">
+                        引用：<a href="https://teleremo.net/?p=356" class="skill-example">テレリモ総研</a><br>
+                        制作時間：2時間（デザイン検討時間を除く）
+                    </p>
+                </div>
+                <div id="ovice">
+                    <img src="img/ovice.png" alt="" class="skill-image">
+                    <p class="skill-description">会社のキックオフイベントのワークショップ時に利用するOvice背景を作成しました。<br>
+                        テーマがF1の用語から来ていたので、サーキットをイメージした背景にしました。<br>
+                        制作時間：５時間（デザイン検討時間を除く)
+                    </p>
+                </div>
+            </div>
+            <div class="custom-shape-divider-top-1673275693">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
             </div>
         </section>
-
         <section id="contact">
             <div class="section-title">
                 <h2 class="en-title">Contact</h2>
@@ -287,7 +321,10 @@
             </div> -->
         </section>
     </main>
-    <footer><small>minorifolio:)</small></footer>
+    <footer>
+        <small>minorifolio:)</small>
+        <span id="page-top"><a href=""></a></span>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
