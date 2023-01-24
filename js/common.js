@@ -16,7 +16,6 @@ window.onload = function () {
   $('.slider').slick({
     fade:true,
     autoplay: false,
-    autoplaySpeed: 3000,
     speed:1000,
     infinite: true,
     slidesToShow: 1,
@@ -28,7 +27,6 @@ window.onload = function () {
     pauseOnFocus: false,
     pauseOnHover: false,
     pauseOnDotsHover: false,
-    consolelog:"aaa",
 });
 
 //モーダル表示

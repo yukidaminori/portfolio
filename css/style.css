@@ -74,7 +74,7 @@
 	appearance: none;
  }
  section {
-    padding: 5% 10%;
+    padding: 10%;
     position: relative;
     z-index: 0;
  }
@@ -140,6 +140,10 @@
 
 .custom-shape-divider-bottom-1673275628 .shape-fill {
   fill: #E5E4DE;
+}
+
+#profile, #contact {
+  padding-bottom: 0;
 }
  /* ヘッダー */
  #splash {
@@ -326,48 +330,56 @@ small {
   }
 /* ファーストビュー */
 #topview {
-    background-image: url("../img/topview.png");
+    background-image: url(../img/topview.png);
     background-size: cover;
     content: unset;
-    display: inline-block;
+    align-items: center;
+    display: flex;
     width: 100%;
     height: 100vh;
+    justify-content: center;
 }
 
 .top-title {
-    position: relative;
-    left: 12vw;
-    bottom: 2.5999999999999996vw;
-    width: 70%;
+    width: 74%;
 }
 
 /* プロフィール */
+#profile > .section-content {
+  height: 27rem;
+  margin-bottom: 16%;
+}
 
 .slider {
     position:relative;
-      z-index: 1;
-      height: 70vh;
+    z-index: 1;
+    padding: 0;
+    height: 100%;
   }
   
   .prof-wrapper {
     display: flex;
     margin: 4% 8%;
-    position: relative;
-    right: 19px;
+    align-items: center;
   }
 
   .prof-wrapper > img {
     width: 40%;
+    height: 40%;
   }
   
   .prof-content {
     width: 60%;
-    padding: 2%;
   }
-  .slider-item {
-      width: 100%;
-      height:70vh;
-  }
+
+  .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
   
   .slick-prev, 
   .slick-next {
@@ -404,6 +416,13 @@ small {
     text-align: center;
     display: block;
     padding: 0;
+  }
+  
+  
+@media screen and (min-width:1000px) {
+    .slick-dots {
+      margin-top: 30px;
+    }
   }
   
   .slick-dots li {
