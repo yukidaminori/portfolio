@@ -37,16 +37,15 @@
 
 
  h1 {
-    margin: 0; padding: 0;
-    font-size: 20px;
- }
-
- h2 {
     font-family: "Courgette";
     text-align: center;
     font-size: 4em;
     margin: 0;
     text-shadow: 6px 4px 0px #FEF6B7;
+ }
+
+ h2 {
+    font-size: 2em;
  }
 
  a {	
@@ -346,8 +345,24 @@ small {
 
 /* プロフィール */
 #profile > .section-content {
-  height: 27rem;
   margin-bottom: 16%;
+}
+
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration:2s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+}
+@keyframes fadeUpAnime{
+from {
+  opacity: 0;
+  transform: translateY(100px);
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
 }
 
 .slider {
@@ -361,15 +376,16 @@ small {
     display: flex;
     margin: 4% 8%;
     align-items: center;
+    justify-content: space-between;
   }
 
   .prof-wrapper > img {
-    width: 40%;
-    height: 40%;
+    width: 32%;
+    height: 32%;
   }
   
   .prof-content {
-    width: 60%;
+    margin: 1%;
   }
 
   .slick-list {
